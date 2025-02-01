@@ -1,4 +1,144 @@
-<iframe style="width: 100%; height: 100vh; border: none;" 
-  src="https://www.canva.com/design/DAGdyVR2WCE/4H8kNIX8YPisv_98e61SRQ/view?embed" 
-  allowfullscreen>
-</iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f4ef;
+            color: #333;
+        }
+
+        header {
+            background-color: #d1b69b;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #b89e83;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #d1b69b;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #d1b69b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #b89e83;
+        }
+
+        footer {
+            background-color: #d1b69b;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Store</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/250x300" alt="Product 1">
+            <div class="product-details">
+                <div class="product-title">Stylish Dress</div>
+                <div class="product-price">$49.99</div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250x300" alt="Product 2">
+            <div class="product-details">
+                <div class="product-title">Elegant Blazer</div>
+                <div class="product-price">$79.99</div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250x300" alt="Product 3">
+            <div class="product-details">
+                <div class="product-title">Classic Jeans</div>
+                <div class="product-price">$59.99</div>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
